@@ -1,0 +1,16 @@
+.header{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, white, rgba(0, 0, 0, 0.312),), url(../../img/header-bkg.jpg);
+    position: relative;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    &__text-box{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        text-align: center;
+        transform:  translate(-50%, -50%);
+    }
+}

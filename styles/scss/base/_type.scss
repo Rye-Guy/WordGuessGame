@@ -1,0 +1,25 @@
+body{
+    font-family: 'Gloria Hallelujah', cursive;
+    line-height: 1.6;
+    font-size: $regular-font-size;
+}
+
+.row{
+    text-align: center;
+}
+
+.heading__text{
+    color: $text-color-primary;
+
+    &--main{
+        text-transform: uppercase;
+        font-size: $big-font-size;
+    }
+
+    &--secondary{
+        font-size: $regular-font-size;
+    }
+}
+
+
+

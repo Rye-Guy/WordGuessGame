@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.row {
+  margin: 0 auto; }
+
+body {
+  font-family: 'Gloria Hallelujah', cursive;
+  line-height: 1.6;
+  font-size: 2rem; }
+
+.row {
+  text-align: center; }
+
+.heading__text {
+  color: black; }
+  .heading__text--main {
+    text-transform: uppercase;
+    font-size: 5rem; }
+  .heading__text--secondary {
+    font-size: 2rem; }
+
+.u-margin-top {
+  margin-top: 6rem; }
+
+.u-margin-bottom {
+  margin-bottom: 6rem; }
+
+.row {
+  max-width: 120rem; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 5rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 5rem ) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 5rem) / 3); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 5rem) / 4); }
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, white, rgba(0, 0, 0, 0.312)), url(../../img/header-bkg.jpg);
+  position: relative;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); }
