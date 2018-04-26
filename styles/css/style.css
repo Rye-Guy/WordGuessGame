@@ -29,6 +29,11 @@ body {
     font-size: 5rem; }
   .heading__text--secondary {
     font-size: 2rem; }
+  .heading__text--gradient {
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to left, #FE4A49, #FED766, #009FB7);
+    -webkit-background-clip: text;
+    color: transparent; }
 
 .u-margin-top {
   margin-top: 6rem; }
@@ -55,16 +60,95 @@ body {
   .row .col-1-of-4 {
     width: calc((100% - 3 * 5rem) / 4); }
 
+main {
+  height: 95vh; }
+
 .header {
   height: 100vh;
-  background-image: linear-gradient(to bottom, white, rgba(0, 0, 0, 0.312)), url(../../img/header-bkg.jpg);
+  background-image: linear-gradient(to right, #FE4A49, #FED766, #009FB7);
   position: relative;
   background-size: contain;
-  background-position: top;
-  background-repeat: no-repeat; }
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 24px 73px 6px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 24px 73px 6px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 24px 73px 6px rgba(0, 0, 0, 0.36); }
   .header__text-box {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%); }
+
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 2rem;
+  top: 75%;
+  left: 40%; }
+
+.btn:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.4);
+    opacity: 0; }
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.4); }
+
+.btn--white {
+  background-color: #FFF;
+  color: black !important; }
+  .btn--white::after {
+    background-color: white; }
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s; }
+
+.btn--animated {
+  animation: moveBtn 2s ease .75s;
+  /* animation fill mode fixes the problem by running the intinal state of the button backwards*/
+  animation-fill-mode: backwards; }
+
+.btn-text:link, .btn-text:visited {
+  font-size: 2rem;
+  color: #FE4A49;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #FE4A49;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: #FE4A49;
+  color: white;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(0px); }
+
+.footer {
+  background-image: url("../../img/film-30008.svg");
+  width: 100%;
+  height: 140px;
+  -webkit-box-shadow: 0px -24px 73px 6px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px -24px 73px 6px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px -24px 73px 6px rgba(0, 0, 0, 0.36); }

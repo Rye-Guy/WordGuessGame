@@ -19,7 +19,12 @@ body{
     &--secondary{
         font-size: $regular-font-size;
     }
+
+    &--gradient{
+        -webkit-text-fill-color: transparent;
+          background-image: linear-gradient(to left,  $color-primary,     $color-secondary, $color-three);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
 }
-
-
 
