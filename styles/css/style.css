@@ -35,6 +35,9 @@ body {
     -webkit-background-clip: text;
     color: transparent; }
 
+.spaces {
+  font-size: 5rem; }
+
 .u-margin-top {
   margin-top: 6rem; }
 
